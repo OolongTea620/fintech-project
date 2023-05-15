@@ -44,13 +44,13 @@ internal class LoanRequestControllerTest {
 
     @BeforeEach
     fun init() {
-        generateKey = GenerateKey()
+        ggenerateKey = GenerateKey()
 
         encryptComponent = EncryptComponent()
 
         loanRequestServiceImpl = LoanRequestServiceImpl(
-            generateKey, userInfoRepository, encryptComponent
-        )
+            generateKey, userInfoRepository, encryptComponent)
+        // Sender 추가 후 에러....
 
         loanRequestController = LoanRequestController(loanRequestServiceImpl)
 

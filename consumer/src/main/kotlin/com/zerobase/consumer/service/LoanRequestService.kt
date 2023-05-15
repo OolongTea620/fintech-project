@@ -13,7 +13,7 @@ class LoanRequestService (
     private val loanReviewRepository: LoanReviewRepository
 ) {
     companion object {
-        const val cssUrl = "http://localhost:8081/css/api/v1/request"
+        const val cssUrl = "http://localhost:8085/css/api/v1/request"
     }
 
     fun loanRequest(loanRequestDto: LoanRequestDto) {
