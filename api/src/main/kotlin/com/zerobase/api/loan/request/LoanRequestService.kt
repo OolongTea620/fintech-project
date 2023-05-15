@@ -4,7 +4,6 @@ import com.zerobase.domain.com.zerobase.api.domain.UserInfo
 
 
 interface LoanRequestService {
-
     fun loanRequestMain(
         loanRequestInputDto: LoanRequestDto.LoanRequestInputDto
     ): LoanRequestDto.LoanRequestResponseDto
@@ -13,7 +12,6 @@ interface LoanRequestService {
         userInfoDto: UserInfoDto
     ): UserInfo
 
-    fun loanRequestReview(userkey: String)
-
+    fun loanRequestReview(userInfoDto: UserInfoDto)
 
 }
